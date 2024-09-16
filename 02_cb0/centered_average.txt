@@ -1,0 +1,12 @@
+def centered_average(nums):
+  max = nums[0]
+  min = nums[0]
+  total = 0
+  for i in nums:
+    if i > max:
+      max = i
+    if i < min:
+      min = i
+    total += i
+  return (total - max - min)/(len(nums)-2)
+
